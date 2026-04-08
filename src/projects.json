@@ -1,0 +1,241 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "프로젝트명 01",
+      "thumbnail": "/img/project_thumbnail_carbon.png",
+      "links": {
+        "liveUrl": "/"
+      },
+      "summary": {
+        "date": "2025.00",
+        "type": "반응형",
+        "team": "개인 프로젝트"
+      },
+      "description1": "유기견 입양 플랫폼",
+      "description2": "프로젝트 설명을 입력하세요.",
+      "techStack": [],
+      "contributions": [
+        {
+          "title": "퍼블리싱",
+          "items": [
+            "메인 슬라이드, 그래프 애니메이션, 입양 리스트, 헤더 및 푸터, 센터 소개 페이지의 UI 퍼블리싱을 담당했습니다."
+          ]
+        },
+        {
+          "title": "프론트엔드",
+          "items": [
+            "서울시 공공 API를 활용해 입양 리스트 데이터를 불러오고, 필요한 데이터로 가공 후 localStorage에 저장하여 화면에 렌더링했습니다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "포트폴리오",
+      "thumbnail": "/img/project_thumbnail_portpolio.jpg",
+      "links": {
+        
+      },
+      "summary": {
+        "date": "2026.04",
+        "type": "반응형",
+        "team": "개인 프로젝트"
+      },
+      "description1": "박소영의 포트폴리오",
+      "description2": {
+        "img": "/img/detail_thumb_portpolio.png",
+        "content": "불필요를 덜어내고, 구조에 집중한 포트폴리오입니다."
+      },
+      "techStack": [
+         {
+          "key": "html5",
+          "label": "HTML5",
+          "icon": "/img/skill/icon_html.png"
+        },
+        {
+          "key": "scss",
+          "label": "SCSS",
+          "icon": "/img/skill/icon_scss.png"
+        },
+        {
+          "key": "javascript",
+          "label": "JavaScript",
+          "icon": "/img/skill/icon_js.png"
+        },
+        {
+          "key": "json",
+          "label": "JSON",
+          "icon": "/img/skill/icon_json_fff.png"
+        },
+        {
+          "key": "react",
+          "label": "REACT",
+          "icon": "/img/skill/icon_react.png"
+        },
+        {
+          "key": "github",
+          "label": "GitHub",
+          "icon": "/img/skill/icon_github_fff.png"
+        }
+      ],
+      "contributions": [
+        {
+          "title": "기획",
+          "items": [
+            "사용자 흐름을 고려한 핵심 정보의 우선순위를 설계했습니다.  About - Skill - Project로 이어지는 구조를 통해, 방문자가 저를 한눈에 파악할 수 있도록 전체 와이어프레임을 구성했습니다."
+          ]
+        },
+        {
+          "title": "UX UI 디자인",
+          "items": [
+            "심플한 레퍼런스를 기반으로 불필요한 요소를 덜어내고, 미니멀한 구성에 감성을 한스푼 더해 가독성과 사용성을 고려한 UI/UX를 디자인했습니다."
+          ]
+        },
+        {
+          "title": "퍼블리싱",
+          "items": [
+            "스크롤 인터랙션과 hover 등의 이벤트로 화면에 변화를 더하고, 반응형과 다크모드를 적용해 다양한 환경에서도 일관된 UI를 제공했습니다."
+          ]
+        },
+        {
+          "title": "프론트엔드",
+          "items": [
+            "프로젝트와 스킬 데이터를 JSON 구조로 관리하고 컴포넌트 단위로 분리하여 동적으로 렌더링함으로써 유지보수성을 높였습니다."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "온집",
+      "thumbnail": "/img/project_thumbnail_onjib.png",
+      "links": {
+        "liveUrl": "https://soyoung00.github.io/onjib-project/",
+        "gitUrl": "/"
+      },
+      "summary": {
+        "date": "2026.02",
+        "type": "반응형",
+        "team": "3인(팀프로젝트)"
+      },
+      "description1": "유기견 입양 플랫폼",
+      "description2": {
+        "img": "/img/detail_thumb_onjib.png",
+        "content": "유기동물(개, 고양이)을 위한 다양한 서비스를 제공하여, <br/> 사람들이 쉽게 참여하고 반려동물과 행복하게 공존할 수 있는 감성적이고 신뢰감 있는 입양 플랫폼입니다."
+      },
+      "techStack": [
+        {
+          "key": "html5",
+          "label": "HTML5",
+          "icon": "/img/skill/icon_html.png"
+        },
+        {
+          "key": "scss",
+          "label": "SCSS",
+          "icon": "/img/skill/icon_scss.png"
+        },
+        {
+          "key": "javascript",
+          "label": "JavaScript",
+          "icon": "/img/skill/icon_js.png"
+        },
+        {
+          "key": "json",
+          "label": "Json",
+          "icon": "/img/skill/icon_json_fff.png"
+        },
+        {
+          "key": "github",
+          "label": "GitHub",
+          "icon": "/img/skill/icon_github_fff.png"
+        }
+      ],
+      "contributions": [
+        {
+          "title": "기획",
+          "items": [
+            "유사 서비스 벤치마킹을 통해 콘텐츠 구조를 분석하고, 브랜드 톤에 맞는 컬러와 컨셉을 설정했으며, 사용자 동선을 고려한 메인 와이어프레임과 오시는 길 페이지를 기획했습니다."
+          ]
+        },
+        {
+          "title": "UX UI 디자인",
+          "items": [
+            "입양 문의 및 후기 리스트, 센터 소개 콘텐츠, 후원하기·봉사하기, 오시는 길 페이지를 설계했으며, 사용자 흐름과 정보 접근성을 고려한 UI/UX 디자인을 통해 핵심 정보 전달력을 높였습니다. 또한 나노바나나를 활용하여 팝업 디자인을 제작했습니다."
+          ]
+        },
+        {
+          "title": "퍼블리싱",
+          "items": [
+            "메인 슬라이드, 그래프 애니메이션, 입양 리스트, 헤더 및 푸터, 센터 소개 페이지의 UI 퍼블리싱을 담당했습니다."
+          ]
+        },
+        {
+          "title": "프론트엔드",
+          "items": [
+            "서울시 공공 API를 활용해 입양 리스트 데이터를 불러오고, 필요한 데이터로 가공 후 localStorage에 저장하여 화면에 렌더링했습니다."
+          ]
+        }
+      ],
+      "troubleshooting": [
+        {
+          "title": "메인 - 입양리스트",
+          "content": [
+            "초기에는 필요한 값을 개별 필드에서 직접 추출할 계획이었으나, 여러 정보가 하나의 필드에 통합되어 있어 문자열 구분자를 기준으로 split과 substring을 활용해 데이터를 분리하여서 시간이 더 소요되었습니다.",
+            "cors error : GitHub Pages는 HTTPS 환경에서 실행되는데, 서울 OpenAPI를 http로 직접 호출하면서 Mixed Content 오류가 발생하였습니다. 이를 해결하기 위해 Cloudflare Workers를 이용하여 프록시 서버를 생성하고, API 요청을 Worker를 통해 전달하도록 변경하여 HTTPS 환경에서도 정상적으로 데이터를 불러올 수 있도록 수정하였습니다."
+          ],
+          "img": "/img/trouble_onjib.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "탄소중립연구조합",
+      "thumbnail": "/img/project_thumbnail_carbon.png",
+      "links": {
+        "liveUrl": "http://k-netzero.net/"
+      },
+      "summary": {
+        "date": "2023년",
+        "type": "반응형",
+        "team": "4인(팀프로젝트)"
+      },
+      "description1": "기관의 콘텐츠를 전달하고 관리하는 플랫폼",
+      "description2": {
+        "img": "/img/detail_thumb_carbon.png",
+        "content": "탄소중립 및 ESG 관련 정책, 연구자료, 소식 등을 제공하는 정보 중심 웹사이트로, <br/> 기관의 콘텐츠를 효율적으로 관리하고 사용자에게 전달하기 위한 플랫폼입니다."
+      },
+      "techStack": [
+        {
+          "key": "java",
+          "label": "JAVA",
+          "icon": "/img/skill/icon_java_fff.png"
+        },
+        {
+          "key": "javascript",
+          "label": "JAVASCRIPT",
+          "icon": "/img/skill/icon_js.png"
+        },
+        {
+          "key": "sql",
+          "label": "SQL",
+          "icon": "/img/skill/icon_sql_fff.png"
+        }
+      ],
+      "contributions": [
+        {
+          "title": "백엔드",
+          "items": [
+            "사용자 페이지 연동 및 관리자 페이지를 개발했습니다. 로그인, 게시판 CRUD, 검색, 페이징 기능을 구현했으며, 관리자에서 등록한 데이터가 사용자 페이지에 반영될 수 있도록 데이터를 처리를 했습니다. 또한 관리자 페이지에서 팝업을 직접 등록하고 노출할 수 있는 기능을 구현하여 사이트 운영 편의성을 높였습니다."
+          ]
+        },
+        {
+          "title": "DB",
+          "items": [
+            "게시판, 관리자 계정, 팝업, 사용자 페이지 노출 데이터 등을 관리할 수 있도록 데이터베이스 구조를 설계했습니다."
+          ]
+        }
+      ]
+    }
+  ]
+}

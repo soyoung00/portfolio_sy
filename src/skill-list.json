@@ -1,0 +1,75 @@
+{
+    "skillList": {
+        "webDevelopment": [
+            {
+                "key": "html",
+                "label": "HTML",
+                "icon": "/img/skill/icon_html.png"
+            },
+            {
+                "key": "scss",
+                "label": "SCSS",
+                "icon": "/img/skill/icon_scss.png"
+            },
+            {
+                "key": "javascript",
+                "label": "JavaScript",
+                "icon": "/img/skill/icon_js.png"
+            },
+            {
+                "key": "json",
+                "label": "JSON",
+                "icon": "/img/skill/icon_json.png"
+            },
+            {
+                "key": "typescript",
+                "label": "TypeScript",
+                "icon": "/img/skill/icon_typescript.png"
+            },
+            {
+                "key": "react",
+                "label": "REACT",
+                "icon": "/img/skill/icon_react.png"
+            },
+            {
+                "key": "nodejs",
+                "label": "NodeJs",
+                "icon": "/img/skill/icon_nodejs.png"
+            },
+            {
+                "key": "java",
+                "label": "JAVA",
+                "icon": "/img/skill/icon_java.png"
+            }
+            ,
+            {
+                "key": "sql",
+                "label": "SQL",
+                "icon": "/img/skill/icon_sql.png"
+            }
+            
+        ],
+        "design": [
+            {
+                "key": "figma",
+                "label": "FIGMA",
+                "icon": "/img/skill/icon_figma.png"
+            },
+            {
+                "key": "midjourney",
+                "label": "MIDJOURNEY",
+                "icon": "/img/skill/icon_midjourney.png"
+            },
+            {
+                "key": "nanobanana",
+                "label": "NanoBanana",
+                "icon": "/img/skill/icon_nanobanana.png"
+            }
+        ],
+        "collaboration": {
+            "key": "github",
+            "label": "GitHub",
+            "icon": "/img/skill/icon_github.png"
+        }
+    }
+}
