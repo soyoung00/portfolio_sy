@@ -292,7 +292,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 450px;
+        gap: 350px;
 
         .experience {
             display: flex;
@@ -1064,6 +1064,9 @@ section {
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .sidebar {
+        right: 5%;
+        left: auto;
+        top: 6%;
 
 
         .side-btn {
@@ -1079,6 +1082,7 @@ section {
         .side-btn.active {}
 
         .sidebar-menu {
+            display: none;
             width: 76px;
             height: 210px;
 
@@ -1087,8 +1091,9 @@ section {
         }
 
         .sidebar-mode {
-            width: 76px;
-            height: 140px;
+            flex-direction: row;
+            height: 76px;
+            width: 140px;
 
         }
     }

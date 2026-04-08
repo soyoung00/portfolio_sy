@@ -241,7 +241,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 450px;
+  gap: 350px;
 }
 .experience-skill .area .experience {
   display: flex;
@@ -813,6 +813,11 @@ section {
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar {
+    right: 5%;
+    left: auto;
+    top: 6%;
+  }
   .sidebar .side-btn {
     width: 65px;
     height: 65px;
@@ -822,12 +827,14 @@ section {
     height: 28px;
   }
   .sidebar .sidebar-menu {
+    display: none;
     width: 76px;
     height: 210px;
   }
   .sidebar .sidebar-mode {
-    width: 76px;
-    height: 140px;
+    flex-direction: row;
+    height: 76px;
+    width: 140px;
   }
   .about-me > figure > div > h2 {
     font-size: clamp(32px, 5vw, 50px);
