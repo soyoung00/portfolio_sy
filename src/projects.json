@@ -2,30 +2,88 @@
   "projects": [
     {
       "id": "1",
-      "title": "프로젝트명 01",
-      "thumbnail": "/img/project_thumbnail_carbon.png",
+      "title": "StorePilot",
+      "thumbnail": "/img/project_thumbnail_storepilot.jpg",
       "links": {
-        "liveUrl": "/"
+        "liveUrl": "https://store-pilot-lake.vercel.app/",
+        "gitUrl": "https://github.com/soyoung00/StorePilot"
       },
       "summary": {
-        "date": "2025.00",
+        "date": "2026.04 ~ 2026.05",
         "type": "반응형",
-        "team": "개인 프로젝트"
+        "team": "5인(팀프로젝트)"
       },
-      "description1": "유기견 입양 플랫폼",
-      "description2": "프로젝트 설명을 입력하세요.",
-      "techStack": [],
+      "description1": "AI 기반 매장 통합 관리 시스템",
+      "description2": {
+        "img": "/img/detail_thumb_storepilot.png",
+        "content": "매출, 재고, 직원 스케줄, 메뉴 데이터를 통합 관리하고 <br/> AI 분석을 통해 운영 인사이트를 제공하는 매장 운영 관리 플랫폼입니다."
+      },
+      "techStack": [
+        {
+          "key": "html5",
+          "label": "HTML5",
+          "icon": "/img/skill/icon_html.png"
+        },
+        {
+          "key": "scss",
+          "label": "SCSS",
+          "icon": "/img/skill/icon_scss.png"
+        },
+        {
+          "key": "javascript",
+          "label": "JavaScript",
+          "icon": "/img/skill/icon_js.png"
+        },
+        {
+          "key": "json",
+          "label": "JSON",
+          "icon": "/img/skill/icon_json_fff.png"
+        },
+        {
+          "key": "nextjs",
+          "label": "NEXT.JS",
+          "icon": "/img/skill/icon_nextjs.png"
+        },
+        {
+          "key": "mongodb",
+          "label": "MongoDB",
+          "icon": "/img/skill/icon_mongodb.png"
+        },
+        {
+          "key": "github",
+          "label": "GitHub",
+          "icon": "/img/skill/icon_github_fff.png"
+        }
+      ],
       "contributions": [
+        {
+          "title": "기획",
+          "items": [
+            "메뉴 관리, 직원 스케줄, 매출 분석 기능을 하나의 흐름으로 연결하여 사용자 중심의 매장 운영 관리 구조를 기획했습니다.",
+            " AI를 활용한 판매 부진 메뉴 분석, 매출 분석, 인건비 분석 기능을 통해 운영 효율성을 높일 수 있도록 서비스 흐름을 설계했습니다."
+          ]
+        },
+        {
+          "title": "UX UI 디자인",
+          "items": [
+            "사이드바 기반의 레이아웃과 AI 챗봇 UI를 설계하여 사용자가 주요 데이터를 직관적으로 확인할 수 있도록 카드형 인터페이스로 구성했습니다.",
+            " 메인 화면, 대시보드, 설정 페이지를 반응형 기반으로 디자인하고 카드형 데이터 UI와 그래프 요소를 활용해 가독성을 높였습니다."
+          ]
+        },
         {
           "title": "퍼블리싱",
           "items": [
-            "메인 슬라이드, 그래프 애니메이션, 입양 리스트, 헤더 및 푸터, 센터 소개 페이지의 UI 퍼블리싱을 담당했습니다."
+            "Next.js 기반으로 메인, 대시보드, 설정, 사이드바 컴포넌트를 퍼블리싱하고 SCSS 모듈을 활용해 유지보수성을 높였습니다.",
+            " 모바일 환경에서도 안정적으로 사용할 수 있도록 반응형 레이아웃과 모바일 메뉴 인터랙션을 구현했습니다."
           ]
         },
         {
           "title": "프론트엔드",
           "items": [
-            "서울시 공공 API를 활용해 입양 리스트 데이터를 불러오고, 필요한 데이터로 가공 후 localStorage에 저장하여 화면에 렌더링했습니다."
+            "MongoDB와 연동하여 매출, 직원, 재고 데이터를 조회하고 챗봇 분석에 활용할 수 있도록 데이터를 가공하여 AI 로직에 전달했습니다.",
+            " Gemini LLM API를 활용해 매출 분석, 인기 메뉴 분석, 인건비 분석 등 AI 기반 운영 인사이트 기능을 구현했습니다.",
+            " Axios를 활용해 API 데이터를 비동기로 처리하고 페이지별 데이터를 효율적으로 관리했습니다.",
+            " NextAuth를 활용하여 Google·Naver 로그아웃 및 계정 삭제 기능을 구현했습니다."
           ]
         }
       ]
@@ -34,9 +92,7 @@
       "id": "2",
       "title": "포트폴리오",
       "thumbnail": "/img/project_thumbnail_portpolio.jpg",
-      "links": {
-        
-      },
+      "links": {},
       "summary": {
         "date": "2026.04",
         "type": "반응형",
@@ -48,7 +104,7 @@
         "content": "불필요를 덜어내고, 구조에 집중한 포트폴리오입니다."
       },
       "techStack": [
-         {
+        {
           "key": "html5",
           "label": "HTML5",
           "icon": "/img/skill/icon_html.png"

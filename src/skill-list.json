@@ -32,6 +32,16 @@
                 "icon": "/img/skill/icon_react.png"
             },
             {
+                "key": "nextjs",
+                "label": "NextJs",
+                "icon": "/img/skill/icon_nextjs.png"
+            },
+            {
+                "key": "vue",
+                "label": "VUE",
+                "icon": "/img/skill/icon_vue.png"
+            },
+            {
                 "key": "nodejs",
                 "label": "NodeJs",
                 "icon": "/img/skill/icon_nodejs.png"

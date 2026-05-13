@@ -88,10 +88,11 @@ section {
     background: url(../../public/img/main_background.png) 0 0/ cover no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     color: var(--text-main);
     overflow: hidden;
+    flex-direction: column;
 
     >figure {
         position: relative;
@@ -141,6 +142,180 @@ section {
             animation: textUp 2.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
             animation-delay: 0.9s;
+        }
+    }
+
+    .profile-img {
+        position: relative;
+        width: 400px;
+        height: 440px; 
+        padding-top: 40px; // hover 영역 확보
+
+        z-index: 2;
+        margin-top: 70px;
+        cursor: pointer;
+
+        img {
+            position: absolute;
+
+            top: 50px; // 이미지 아래로
+            left: 0;
+
+            width: 100%;
+            height: 400px;
+
+            object-fit: cover;
+
+            transition: opacity 0.3s ease;
+        }
+
+        .basic-img {
+            opacity: 1;
+        }
+
+        .hover-img {
+            opacity: 0;
+        }
+
+        .email-bubble {
+            position: absolute;
+            left: 50%;
+            top: 10px;
+
+            transform: translateX(-50%) translateY(10px);
+
+            padding: 10px 18px;
+            border: none;
+            border-radius: 999px;
+            background: #000;
+            color: #fff;
+
+            font-family: 'Pretendard';
+            font-size: 15px;
+            white-space: nowrap;
+            cursor: pointer;
+
+            opacity: 0;
+
+            transition:
+                opacity 0.25s ease,
+                transform 0.25s ease;
+
+            // 추가
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            >img {
+                width: 18px;
+                height: 18px;
+                object-fit: contain;
+                position: static; // absolute 덮어쓰기 중요
+                cursor: pointer;
+
+                transition:
+                    transform 0.2s ease,
+                    opacity 0.2s ease;
+
+                &:hover {
+                    transform: scale(1.12);
+                    opacity: 0.7;
+                }
+
+                &:active {
+                    transform: scale(0.92);
+                }
+            }
+        }
+
+        .email-bubble.dark {
+            background: #fff;
+            color: #000;
+        }
+
+        .email-bubble.dark::after {
+            border-top-color: #fff;
+        }
+
+        .email-bubble::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -7px;
+            transform: translateX(-50%);
+
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 7px solid #000;
+        }
+
+        &:hover {
+            .basic-img {
+                opacity: 0;
+            }
+
+            .hover-img {
+                opacity: 1;
+            }
+
+            .email-bubble {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+
+            .hover-guide {
+                opacity: 0;
+            }
+        }
+
+        .hover-guide {
+            position: absolute;
+            right: -20px;
+            bottom: 70px;
+            z-index: 5;
+
+            opacity: 0.8;
+            pointer-events: none;
+
+            animation: mouseMoveToProfile 1.6s ease-in-out infinite;
+
+            >img {
+                position: relative;
+                top: auto;
+                left: auto;
+
+                width: 42px;
+                height: 42px;
+                object-fit: contain;
+                display: block;
+            }
+        }
+
+        @keyframes mouseMoveToProfile {
+            0% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.35;
+            }
+
+            45% {
+                transform: translate(-70px, -40px) scale(1);
+                opacity: 1;
+            }
+
+            60% {
+                transform: translate(-70px, -40px) scale(0.9);
+                opacity: 1;
+            }
+
+            75% {
+                transform: translate(-70px, -40px) scale(1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.35;
+            }
         }
     }
 
@@ -817,6 +992,7 @@ section {
 
                     span {
                         width: 40%;
+
                         >img {
                             width: 100%;
                         }
@@ -825,6 +1001,7 @@ section {
 
                     >ul {
                         width: 60%;
+
                         li {
                             padding: 16px 0;
                             line-height: 26px;
@@ -1045,11 +1222,11 @@ section {
                     flex-direction: column;
                     flex-wrap: wrap;
 
-                    >span{
+                    >span {
                         width: 100%;
                     }
 
-                    >ul{
+                    >ul {
                         width: 100%;
                     }
                 }

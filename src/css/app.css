@@ -77,10 +77,11 @@ section {
   background: url(../../public/img/main_background.png) 0 0/cover no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   color: var(--text-main);
   overflow: hidden;
+  flex-direction: column;
 }
 .about-me > figure {
   position: relative;
@@ -118,6 +119,138 @@ section {
   transform: translateY(30px);
   animation: textUp 2.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   animation-delay: 0.9s;
+}
+.about-me .profile-img {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  padding-top: 40px;
+  z-index: 2;
+  margin-top: 70px;
+  cursor: pointer;
+}
+.about-me .profile-img img {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.about-me .profile-img .basic-img {
+  opacity: 1;
+}
+.about-me .profile-img .hover-img {
+  opacity: 0;
+}
+.about-me .profile-img .email-bubble {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%) translateY(10px);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: #000;
+  color: #fff;
+  font-family: "Pretendard";
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.about-me .profile-img .email-bubble > img {
+  width: 18px;
+  height: 18px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: static;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.about-me .profile-img .email-bubble > img:hover {
+  transform: scale(1.12);
+  opacity: 0.7;
+}
+.about-me .profile-img .email-bubble > img:active {
+  transform: scale(0.92);
+}
+.about-me .profile-img .email-bubble.dark {
+  background: #fff;
+  color: #000;
+}
+.about-me .profile-img .email-bubble.dark::after {
+  border-top-color: #fff;
+}
+.about-me .profile-img .email-bubble::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+  transform: translateX(-50%);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #000;
+}
+.about-me .profile-img:hover .basic-img {
+  opacity: 0;
+}
+.about-me .profile-img:hover .hover-img {
+  opacity: 1;
+}
+.about-me .profile-img:hover .email-bubble {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.about-me .profile-img:hover .hover-guide {
+  opacity: 0;
+}
+.about-me .profile-img .hover-guide {
+  position: absolute;
+  right: -20px;
+  bottom: 70px;
+  z-index: 5;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: mouseMoveToProfile 1.6s ease-in-out infinite;
+}
+.about-me .profile-img .hover-guide > img {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 42px;
+  height: 42px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+@keyframes mouseMoveToProfile {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.35;
+  }
+  45% {
+    transform: translate(-70px, -40px) scale(1);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-70px, -40px) scale(0.9);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(-70px, -40px) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.35;
+  }
 }
 .about-me .bg-text {
   position: absolute;

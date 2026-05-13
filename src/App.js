@@ -8,10 +8,22 @@ import Menu from './comp/Menu';
 function App() {
   const [mode, setMode] = useState('light');
 
+
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText('parksoyoung9750@gmail.com');
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 1200);
+  };
+
   return (
     <div className={`main ${mode == 'dark' ? 'dark' : ''}`}>
 
-      <Menu setMode={setMode} mode={mode}/>
+      <Menu setMode={setMode} mode={mode} />
 
       <section id="about" className="about-me">
         <div className="bg-text">Front-end</div>
@@ -27,6 +39,48 @@ function App() {
             현재는 백엔드 이해를 갖춘 프론트엔드 개발자로 성장하고 있습니다.
           </figcaption>
         </figure>
+
+        {mode == 'light' ?
+          <div className='profile-img'>
+            <img src='/img/basic-profile-light.png' className='basic-img' />
+            <img src='/img/smile-profile-light.png' className='hover-img' />
+            <button className='email-bubble'>
+              {copied ? '복사 완료!' : 'parksoyoung9750@gmail.com'}
+
+              <img
+                src='/img/copy.png'
+                onClick={copyEmail}
+                className='copy-icon'
+              />
+            </button>
+
+
+            <div className='hover-guide'>
+              <img src='/img/cursor.png' />
+            </div>
+          </div>
+          :
+          <div className='profile-img'>
+            <img src='/img/basic-profile.png' className='basic-img' />
+            <img src='/img/smile-profile.png' className='hover-img' />
+            <button className={`email-bubble  ${mode === 'dark' ? 'dark' : ''}`}>
+              {copied ? '복사 완료!' : 'parksoyoung9750@gmail.com'}
+
+              <img
+                src='/img/copy-dark.png'
+                onClick={copyEmail}
+                className='copy-icon'
+              />
+            </button>
+
+
+            <div className='hover-guide'>
+              <img src='/img/cursor-dark.png' />
+            </div>
+          </div>
+
+        }
+
       </section>
 
       <section id="skill" className="experience-skill">
